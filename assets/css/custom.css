@@ -1,0 +1,9 @@
+.profile .subtitle a {
+    text-decoration: underline !important;
+    color: #0066cc !important;
+
+}
+
+.profile .subtitle a:hover {
+    opacity: 0.8;
+}

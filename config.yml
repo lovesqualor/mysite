@@ -1,5 +1,5 @@
 baseURL: "https://ashlab.net" 
-title: Moritz-Maria von Igelfeld
+title: Alex Huang
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -54,11 +54,16 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Professor Dr von Igelfeld
-          subtitle: "I am a Professor in the Institute of Romance Philology at the University of Regensburg, Germany. My research focuses on Portuguese irregular verbs. I was a doctoral student of Professor Dr Dieter Vogelsang in Munich, and later a second assistant of Professor Walter Schoeffler-Henschell at the University of Wiesbaden."
-          imageUrl: "picture.jpeg"
-          imageWidth: 160
-          imageHeight: 160
+          title: Alex Huang
+          subtitle: "I am currently a research intern at <a href='https://www.chicagobooth.edu/' style='text-decoration: none; border-bottom: 1px solid currentColor;'>University of Chicago Booth School of Business</a> working with <a href='https://pranavnuti.su.domains/' style='text-decoration: none; border-bottom: 1px solid currentColor;'>Pranav Nuti</a> and <a href='https://faculty.chicagobooth.edu/rad-niazadeh' style='text-decoration: none; border-bottom: 1px solid currentColor;'>Rad Niazadeh</a> on online matching secretary problems. <br><br>
+          
+          I recently obtained my master's degree in Computational and Applied Mathematics from the <a href='https://www.uchicago.edu/' style='text-decoration: none; border-bottom: 1px solid currentColor;'>University of Chicago</a>, advised by <a href='https://congma1028.github.io/' style='text-decoration: none; border-bottom: 1px solid currentColor;'>Cong Ma</a>. I previously studied Operations Research: Financial Engineering at <a href='https//www.columbia.edu' style='text-decoration: none; border-bottom: 1px solid currentColor;'>Columbia University</a>, with a minor in Applied Mathematics. <br><br>
+          
+          You can find my CV <a href='cv-11-25.pdf' style='text-decoration: none; border-bottom: 1px solid currentColor;'>here</a>."
+          imageUrl: "prof3.JPG"
+          imageWidth: 176
+          imageHeight: 230
+        
           buttons:
             - name: Papers
               url: papers/
@@ -79,25 +84,17 @@ params:
         - name: CV
           url: cv.pdf
         - name: Email
-          url: mailto:igelfeld@regensburg.edu
+          url: alexhuang@uchicago.edu
         - name: Zoom
           url: https://www.zoom.us/my/igelfeld
         - name: Location
           url: location/
         - name: Office Hours
           url: officehours/
-        - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
+        #- name: Google Scholar
+        #  url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
         - name: GitHub
-          url: https://github.com/pmichaillat
-        - name: Substack
-          url: https://pmichaillat.substack.com
-        - name: YouTube
-          url: https://www.youtube.com/@pmichaillat
-        - name: Twitter
-          url: https://x.com/pmichaillat
-        - name: Bluesky
-          url: https://bsky.app/profile/pmichaillat.bsky.social
+          url: https://github.com/lovesqualor
 
     assets:
         disableScrollBarStyle: true
