@@ -25,17 +25,17 @@ menu:
           url: data/
           weight: 4 
         - name: Blog
-          url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+          url: 'ij.pdf'
           weight: 6
 
 params:
-    description: "This website hosts Moritz-Maria von Igelfeld's research papers, books, course materials, data, curriculum vitae, and contact information."
-    author: Moritz-Maria von Igelfeld
+    description: "personal website of ash"
+    author: ashlab
     # googleAnalyticsID: "G-XXXXX"
-    DateFormat: "January 2006"
+    DateFormat: "November 2025"
     defaultTheme: light
     hideFooter: false
-    disableThemeToggle: true
+    disableThemeToggle: false
     ShowShareButtons: false
     ShowReadingTime: false
     disableSpecial1stPost: true
@@ -60,39 +60,21 @@ params:
           I recently obtained my master's degree in Computational and Applied Mathematics from the <a href='https://www.uchicago.edu/' style='text-decoration: none; border-bottom: 1px solid currentColor;'>University of Chicago</a>, advised by <a href='https://congma1028.github.io/' style='text-decoration: none; border-bottom: 1px solid currentColor;'>Cong Ma</a>. I previously studied Operations Research: Financial Engineering at <a href='https//www.columbia.edu' style='text-decoration: none; border-bottom: 1px solid currentColor;'>Columbia University</a>, with a minor in Applied Mathematics. <br><br>
           
           You can find my CV <a href='cv-11-25.pdf' style='text-decoration: none; border-bottom: 1px solid currentColor;'>here</a>."
-          imageUrl: "prof3.JPG"
-          imageWidth: 176
-          imageHeight: 230
+          imageUrl: "prof4.jpg"
+          imageWidth: 200
+          imageHeight: 300
         
           buttons:
-            - name: Papers
-              url: papers/
-            - name: Data
-              url: data/
-            - name: Books
-              url: books/
-            - name: Courses
-              url: courses/
             - name: Tags
               url: tags/
             - name: Archive
               url: archive/
             - name: Blog
-              url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+              url: archive/
 
     socialIcons:
-        - name: CV
-          url: cv.pdf
         - name: Email
           url: alexhuang@uchicago.edu
-        - name: Zoom
-          url: https://www.zoom.us/my/igelfeld
-        - name: Location
-          url: location/
-        - name: Office Hours
-          url: officehours/
-        #- name: Google Scholar
-        #  url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
         - name: GitHub
           url: https://github.com/lovesqualor
 
@@ -102,7 +84,7 @@ params:
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "Moritz-Maria von Igelfeld"
+      text: "ash"
       icon: favicon.ico
       iconHeight: 18
 
