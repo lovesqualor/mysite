@@ -11,22 +11,6 @@ taxonomies:
     tag: tags
 
 menu:
-    main:
-        - name: Books
-          url: books/
-          weight: 5 
-        - name: Papers
-          url: papers/
-          weight: 2
-        - name: Courses
-          url: courses/
-          weight: 3
-        - name: Data
-          url: data/
-          weight: 4 
-        - name: Blog
-          url: 'ij.pdf'
-          weight: 6
 
 params:
     description: "personal website of ash"
@@ -65,8 +49,6 @@ params:
           imageHeight: 300
 
     socialIcons:
-        - name: Email
-          url: alexhuang@uchicago.edu
         - name: GitHub
           url: https://github.com/lovesqualor
 
