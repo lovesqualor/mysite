@@ -7,3 +7,26 @@
 .profile .subtitle a:hover {
     opacity: 0.8;
 }
+
+/* Increase base font size */
+body {
+    font-size: 18px; /* default is usually 16px */
+}
+
+/* Increase heading sizes */
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+/* Increase profile subtitle text */
+.profile .hdr {
+    font-size: 1.2rem;
+}
