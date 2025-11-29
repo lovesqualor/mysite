@@ -55,7 +55,7 @@ params:
     profileMode:
           enabled: true
           title: Alex Huang
-          subtitle: "I am currently a research intern at <a href='https://www.chicagobooth.edu/' style='text-decoration: none; border-bottom: 1px solid currentColor;'>University of Chicago Booth School of Business</a> working with <a href='https://pranavnuti.su.domains/' style='text-decoration: none; border-bottom: 1px solid currentColor;'>Pranav Nuti</a> and <a href='https://faculty.chicagobooth.edu/rad-niazadeh' style='text-decoration: none; border-bottom: 1px solid currentColor;'>Rad Niazadeh</a> on online matching secretary problems. <br><br>
+          subtitle: "I am currently a research intern at the <a href='https://www.chicagobooth.edu/' style='text-decoration: none; border-bottom: 1px solid currentColor;'>University of Chicago Booth School of Business</a> working with <a href='https://pranavnuti.su.domains/' style='text-decoration: none; border-bottom: 1px solid currentColor;'>Pranav Nuti</a> and <a href='https://faculty.chicagobooth.edu/rad-niazadeh' style='text-decoration: none; border-bottom: 1px solid currentColor;'>Rad Niazadeh</a> on online matching problems. I've written a note with some new results, which you can find <a href='noteonmatchings.pdf' style='text-decoration: none; border-bottom: 1px solid currentColor;'>here</a> (draft).<br><br>
           
           I recently obtained my master's degree in Computational and Applied Mathematics from the <a href='https://www.uchicago.edu/' style='text-decoration: none; border-bottom: 1px solid currentColor;'>University of Chicago</a>, advised by <a href='https://congma1028.github.io/' style='text-decoration: none; border-bottom: 1px solid currentColor;'>Cong Ma</a>. I previously studied Operations Research: Financial Engineering at <a href='https//www.columbia.edu' style='text-decoration: none; border-bottom: 1px solid currentColor;'>Columbia University</a>, with a minor in Applied Mathematics. <br><br>
           
@@ -63,14 +63,6 @@ params:
           imageUrl: "prof4.jpg"
           imageWidth: 200
           imageHeight: 300
-        
-          buttons:
-            - name: Tags
-              url: tags/
-            - name: Archive
-              url: archive/
-            - name: Blog
-              url: archive/
 
     socialIcons:
         - name: Email
