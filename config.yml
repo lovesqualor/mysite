@@ -43,7 +43,12 @@ params:
           
           I recently obtained my master's degree in Computational and Applied Mathematics from the <a href='https://www.uchicago.edu/' style='text-decoration: none; border-bottom: 1px solid currentColor;'>University of Chicago</a>, advised by <a href='https://congma1028.github.io/' style='text-decoration: none; border-bottom: 1px solid currentColor;'>Cong Ma</a>. I previously studied Operations Research: Financial Engineering at <a href='https//www.columbia.edu' style='text-decoration: none; border-bottom: 1px solid currentColor;'>Columbia University</a>, with a minor in Applied Mathematics. <br><br>
           
-          You can find my CV <a href='Alex-Huang-CV-1764457225.pdf' style='text-decoration: none; border-bottom: 1px solid currentColor;'>here</a>."
+          You can find my CV <a href='Alex-Huang-CV-1764457225.pdf' style='text-decoration: none; border-bottom: 1px solid currentColor;'>here</a>. 
+          <br><br>
+
+          <b>Misc:</b> 
+          My GitHub username references <a href='https://en.wikipedia.org/wiki/For_Esmé—with_Love_and_Squalor' style='text-decoration: none; border-bottom: 1px solid currentColor;'>this devastating Salinger story</a>, which I wouldn't recommend you read, if you wish to be happy."
+
           imageUrl: "prof4.jpg"
           imageWidth: 200
           imageHeight: 300
