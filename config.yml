@@ -14,7 +14,7 @@ menu:
 params:
     description: "personal website of ash"
     author: ashlab
-    # googleAnalyticsID: "G-XXXXX"
+    googleAnalyticsID: "G-174EBPET11"
     DateFormat: "November 2025"
     defaultTheme: light
     hideFooter: false
