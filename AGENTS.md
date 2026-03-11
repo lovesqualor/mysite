@@ -72,6 +72,20 @@ When modifying `_config.yml`, these **must be updated together**:
 | Liquid templates (`_includes/`, `_layouts/`)  | [liquid-templates.instructions.md](.github/instructions/liquid-templates.instructions.md)       |
 | JavaScript (`_scripts/`)                      | [javascript-scripts.instructions.md](.github/instructions/javascript-scripts.instructions.md)   |
 
+## Writing Blog Posts
+
+To create a locally-hosted blog post, add a Markdown file in `_posts/` with the standard Jekyll naming convention: `YYYY-MM-DD-title-slug.md`.
+
+Each file should follow the `YYYY-MM-DD-title-slug.md` naming convention and include front matter with `layout: post`, `title`, `date`, `description`, `tags`, and `categories`.
+
+You can use all the usual Markdown features:
+
+- **Bold** and _italic_ text
+- [Links](https://example.com)
+- Images, code blocks, math, and more
+
+Posts without a `redirect` field are internally hosted. Posts with `redirect: <url>` link externally instead.
+
 ## Common Issues
 
 For troubleshooting, see:
