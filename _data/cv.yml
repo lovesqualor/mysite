@@ -1,0 +1,42 @@
+cv:
+  name: Alex Huang
+  label: Researcher
+  email:
+  location:
+  image: ""
+  summary: Research intern at the University of Chicago Booth School of Business, working on online matching problems.
+
+  social_networks:
+    - network: GitHub
+      username: lovesqualor
+
+  sections:
+    Education:
+      - institution: University of Chicago
+        location: Chicago, IL
+        url: https://www.uchicago.edu/
+        area: Computational and Applied Mathematics
+        studyType: Master's
+        start_date:
+        end_date:
+        score: ""
+        highlights:
+          - "Advised by Cong Ma"
+
+      - institution: Columbia University
+        location: New York, NY
+        url: https://www.columbia.edu/
+        area: "Operations Research: Financial Engineering"
+        studyType: Bachelor's
+        start_date:
+        end_date:
+        highlights:
+          - "Minor in Applied Mathematics"
+
+    Experience:
+      - company: University of Chicago Booth School of Business
+        position: Research Intern
+        location: Chicago, IL
+        start_date:
+        end_date:
+        summary: Working with Pranav Nuti and Rad Niazadeh on online matching problems.
