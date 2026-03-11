@@ -1,16 +1,11 @@
+# NOTE: Auto-trigger on push was disabled because we currently link a static PDF
+# for the CV (see _pages/cv.md) rather than using RenderCV to generate it.
+# The sample _data/cv.yml from the al-folio template also has validation errors.
+# To re-enable, restore the original push trigger on main/master with paths filter.
+# See: https://github.com/alshedivat/al-folio for RenderCV setup docs.
 name: Render a CV
 on:
-  push:
-    branches:
-      - main
-      - master
-    paths:
-      - "_data/cv.yml"
-      - "assets/rendercv/design.yaml"
-      - "assets/rendercv/locale.yaml"
-      - "assets/rendercv/settings.yaml"
-  workflow_call:
-  workflow_dispatch:
+  workflow_dispatch: # Manual trigger only; re-enable push trigger when ready to use RenderCV
 permissions:
   contents: write
 jobs:
