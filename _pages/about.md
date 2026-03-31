@@ -28,6 +28,4 @@ I am currently a research intern at the [University of Chicago Booth School of B
 
 I recently obtained my master's degree in Computational and Applied Mathematics from the [University of Chicago](https://www.uchicago.edu/), advised by [Cong Ma](https://congma1028.github.io/). I previously studied Operations Research: Financial Engineering at [Columbia University](https://www.columbia.edu/), with a minor in Applied Mathematics.
 
-You can find my CV [here](/assets/pdf/Alex-Huang-CV-1764457225.pdf).
-
 **Misc:** My GitHub username references [this devastating Salinger story](https://en.wikipedia.org/wiki/For_Esmé—with_Love_and_Squalor), which I wouldn't recommend you read, if you wish to be happy.
