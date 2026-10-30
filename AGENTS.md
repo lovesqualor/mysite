@@ -1,95 +1,50 @@
-# Agent Guidelines for al-folio
+# Agent Guidelines for alhu.net
 
-A simple, clean, and responsive Jekyll theme for academics.
+Alex Huang's personal academic website, live at https://alhu.net. It's built on the [al-folio](https://github.com/alshedivat/al-folio) Jekyll theme but uses only a small part of it: there are no publications, projects, news, teaching pages or blog posts.
 
-## Quick Links by Role
+## Where things are
 
-- **Are you a coding agent?** → Read [`.github/copilot-instructions.md`](.github/copilot-instructions.md) first (tech stack, build, CI/CD, common pitfalls & solutions)
-- **Customizing the site?** → See [`.github/agents/customize.agent.md`](.github/agents/customize.agent.md)
-- **Writing documentation?** → See [`.github/agents/docs.agent.md`](.github/agents/docs.agent.md)
-- **Need setup/deployment help?** → [INSTALL.md](INSTALL.md)
-- **Troubleshooting & FAQ?** → [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
-- **Customization & theming?** → [CUSTOMIZE.md](CUSTOMIZE.md)
-- **Quick 5-min start?** → [QUICKSTART.md](QUICKSTART.md)
+- **Home page:** `_pages/about.md` (profile photo: `assets/img/prof_pic.jpg`)
+- **CV page:** `_pages/cv.md`, rendered from `_data/cv.yml`
+- **PDFs:** `assets/pdf/`. The CV PDF's filename appears in both `_pages/about.md` and `_pages/cv.md`; update both if it changes.
+- **Social links:** `_data/socials.yml`
+- **Site settings and feature flags:** `_config.yml`. Keep `url: https://alhu.net` and `baseurl:` empty.
 
-## Essential Commands
+Files at the repo root are published to the site unless they're listed under `exclude:` in `_config.yml`. Add any new doc or tooling file there.
 
-### Local Development (Docker)
-
-The recommended approach is using Docker.
+## Local development
 
 ```bash
-# Initial setup & start dev server
-docker compose pull && docker compose up
-# Site runs at http://localhost:8080
-
-# Rebuild after changing dependencies or Dockerfile
-docker compose up --build
-
-# Stop containers and free port 8080
-docker compose down
+docker compose pull && docker compose up   # site at http://localhost:8081
+docker compose up --build                  # after changing the Gemfile or Dockerfile
+docker compose down                        # stop and free the port
 ```
 
-### Pre-Commit Checklist
+## Before committing
 
-Before every commit, you **must** run these steps:
+1. Format the files you changed: `npx prettier --write <files>`.
+2. Build locally and check the pages you touched, including dark mode.
+3. Write the commit message as described in [`.github/GIT_WORKFLOW.md`](.github/GIT_WORKFLOW.md) (`<type>: <subject>`).
 
-1.  **Format Code:**
-    ```bash
-    # (First time only)
-    npm install --save-dev prettier @shopify/prettier-plugin-liquid
-    # Format all files
-    npx prettier . --write
-    ```
-2.  **Build Locally & Verify:**
+## Deployment
 
-    ```bash
-    # Rebuild the site
-    docker compose up --build
+Pushing to `main` runs `.github/workflows/deploy.yml`, which builds the site and pushes `_site` to the `gh-pages` branch. GitHub Pages serves that at alhu.net (see `CNAME`). The only other workflows are `codeql.yml` and `update-citations.yml`.
 
-    # Verify by visiting http://localhost:8080.
-    # Check navigation, pages, images, and dark mode.
-    ```
+## Reference docs
 
-## Critical Configuration
+These are written for the al-folio theme as a whole. Where they disagree with this file (the workflow list, the local port), this file is right for this site.
 
-When modifying `_config.yml`, these **must be updated together**:
+- [`.github/copilot-instructions.md`](.github/copilot-instructions.md): tech stack, build requirements, common pitfalls
+- Rules for each file type, in `.github/instructions/`:
 
-- **Personal site:** `url: https://username.github.io` + `baseurl:` (empty)
-- **Project site:** `url: https://username.github.io` + `baseurl: /repo-name/`
-- **YAML errors:** Quote strings with special characters: `title: "My: Cool Site"`
+| Editing                          | Read                                                                                          |
+| -------------------------------- | --------------------------------------------------------------------------------------------- |
+| Pages (`_pages/`)                | [markdown-content.instructions.md](.github/instructions/markdown-content.instructions.md)     |
+| `_config.yml`, `_data/`          | [yaml-configuration.instructions.md](.github/instructions/yaml-configuration.instructions.md) |
+| `_includes/`, `_layouts/`        | [liquid-templates.instructions.md](.github/instructions/liquid-templates.instructions.md)     |
+| BibTeX, JavaScript (`_scripts/`) | the `bibtex-bibliography` and `javascript-scripts` files in the same folder                   |
 
-## Development Workflow
-
-- **Git & Commits:** For commit message format and Git practices, see [.github/GIT_WORKFLOW.md](.github/GIT_WORKFLOW.md).
-- **Code-Specific Instructions:** Consult the relevant instruction file for your code type.
-
-| File Type                                     | Instruction File                                                                                |
-| --------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Markdown content (`_posts/`, `_pages/`, etc.) | [markdown-content.instructions.md](.github/instructions/markdown-content.instructions.md)       |
-| YAML config (`_config.yml`, `_data/`)         | [yaml-configuration.instructions.md](.github/instructions/yaml-configuration.instructions.md)   |
-| BibTeX (`_bibliography/`)                     | [bibtex-bibliography.instructions.md](.github/instructions/bibtex-bibliography.instructions.md) |
-| Liquid templates (`_includes/`, `_layouts/`)  | [liquid-templates.instructions.md](.github/instructions/liquid-templates.instructions.md)       |
-| JavaScript (`_scripts/`)                      | [javascript-scripts.instructions.md](.github/instructions/javascript-scripts.instructions.md)   |
-
-## Writing Blog Posts
-
-To create a locally-hosted blog post, add a Markdown file in `_posts/` with the standard Jekyll naming convention: `YYYY-MM-DD-title-slug.md`.
-
-Each file should follow the `YYYY-MM-DD-title-slug.md` naming convention and include front matter with `layout: post`, `title`, `date`, `description`, `tags`, and `categories`.
-
-You can use all the usual Markdown features:
-
-- **Bold** and _italic_ text
-- [Links](https://example.com)
-- Images, code blocks, math, and more
-
-Posts without a `redirect` field are internally hosted. Posts with `redirect: <url>` link externally instead.
-
-## Common Issues
-
-For troubleshooting, see:
-
-- [Common Pitfalls & Workarounds](.github/copilot-instructions.md#common-pitfalls--workarounds) in copilot-instructions.md
-- [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for detailed solutions
-- [GitHub Issues](https://github.com/alshedivat/al-folio/issues) to search for your specific problem.
+- Customizing the theme: [CUSTOMIZE.md](CUSTOMIZE.md) and [`.github/agents/customize.agent.md`](.github/agents/customize.agent.md)
+- Setup and deployment: [INSTALL.md](INSTALL.md)
+- Troubleshooting: [TROUBLESHOOTING.md](TROUBLESHOOTING.md), [FAQ.md](FAQ.md)
+- Analytics and SEO: [ANALYTICS.md](ANALYTICS.md), [SEO.md](SEO.md)
