@@ -1,0 +1,6 @@
+# Cloudflare Pages redirects for URLs the old al-folio site had.
+# Keep the CV filename in step with the links in index.html.
+/cv /assets/pdf/Alex_Huang_CV_1779987239.pdf 302
+/cv/ /assets/pdf/Alex_Huang_CV_1779987239.pdf 302
+/blog / 301
+/blog/ / 301
